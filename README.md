@@ -39,7 +39,6 @@ router = CommandRouter() # Create cmd router object
 
 Method 1:
 ```
-
 router.set_callback(user)
 router.register('set username {:str}', 'set_username')
 router.route()
