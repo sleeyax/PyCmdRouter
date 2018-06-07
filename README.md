@@ -1,6 +1,6 @@
 # PyCmdRouter (Python Command Router)
 With PyCmdRouter you can invent your own set of commands which can be used within your python application.
-Routng syntax is based on [Simple-API-Framework (PHP)](https://github.com/sleeyax/Simple-API-Framework).
+Routing syntax is based on [Simple-API-Framework (PHP)](https://github.com/sleeyax/Simple-API-Framework).
 
 ## Example
 Possible interactions & output of example.py:
