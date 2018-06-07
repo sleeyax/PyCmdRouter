@@ -40,7 +40,8 @@ router = CommandRouter() # Create cmd router object
 Method 1:
 ```
 router.set_callback(user)
-router.register('set username {:str}', 'set_username') # Executes method 'set_username' from 'user' object, with a string as parameter
+# Executes method 'set_username' from 'user' object, with a string as parameter
+router.register('set username {:str}', 'set_username')
 router.route(inut("Enter your command: "))
 ```
 
