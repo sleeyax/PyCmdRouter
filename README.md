@@ -33,19 +33,19 @@ guest>admin>:
 ### Create a command
 
 ```
-user = new User() # Example callback
+user = new User() # Example callback object
 router = CommandRouter() # Create cmd router object
 ```
 
 Method 1:
 ```
 router.set_callback(user)
-router.register('set username {:str}', 'set_username')
-router.route()
+router.register('set username {:str}', 'set_username') # Executes method 'set_username' from 'user' object, with a string as parameter
+router.route(inut("Enter your command: "))
 ```
 
 Method 2:
 ```
 router.register('set username {:str}', [user, 'set_username']) # Callback is specified inline
-router.route()
+router.route(inut("Enter your command: "))
 ```
